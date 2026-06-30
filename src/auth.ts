@@ -31,6 +31,13 @@ function clearAttempts(key: string) {
   attempts.delete(key);
 }
 
+// List of allowed admin accounts, sourced from env vars.
+// Add more pairs (ADMIN3_EMAIL/ADMIN3_PASSWORD, etc.) the same way if needed later.
+const ADMIN_ACCOUNTS = [
+  { email: process.env.ADMIN_EMAIL, password: process.env.ADMIN_PASSWORD },
+  { email: process.env.ADMIN2_EMAIL, password: process.env.ADMIN2_PASSWORD },
+].filter((a) => a.email && a.password);
+
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
     Credentials({
@@ -45,12 +52,13 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           throw new Error("Bạn đã đăng nhập sai quá nhiều lần. Vui lòng thử lại sau 15 phút.");
         }
 
-        if (
-          credentials.email === process.env.ADMIN_EMAIL &&
-          credentials.password === process.env.ADMIN_PASSWORD
-        ) {
+        const match = ADMIN_ACCOUNTS.find(
+          (a) => a.email === credentials.email && a.password === credentials.password
+        );
+
+        if (match) {
           clearAttempts(key);
-          return { id: "1", name: "Admin", email: credentials.email as string };
+          return { id: key, name: "Admin", email: credentials.email as string };
         }
 
         recordFailedAttempt(key);
