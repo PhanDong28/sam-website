@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 
+export const revalidate = 0;
+
 const GOLD = "#c9a84c";
 
 export const metadata: Metadata = {

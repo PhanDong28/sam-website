@@ -6,6 +6,8 @@ import Navbar from "@/components/public/Navbar";
 import Footer from "@/components/public/Footer";
 import type { Metadata } from "next";
 
+export const revalidate = 0;
+
 const GOLD = "#c9a84c";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

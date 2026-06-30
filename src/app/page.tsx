@@ -6,6 +6,8 @@ import Footer from "@/components/public/Footer";
 
 const GOLD = "#c9a84c";
 
+export const revalidate = 0;
+
 export default async function HomePage() {
   const products = await prisma.product.findMany({
     where: { isPublished: true },

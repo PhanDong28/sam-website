@@ -7,6 +7,8 @@ import type { Metadata } from "next";
 
 const GOLD = "#c9a84c";
 
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: "Toàn Bộ Sản Phẩm | Hữu Sâm",
   description: "Sâm Ngọc Linh, sâm Lai Châu, rượu sâm và các sản phẩm sâm chính gốc Việt Nam, nguồn gốc rõ ràng, chất lượng đảm bảo.",
