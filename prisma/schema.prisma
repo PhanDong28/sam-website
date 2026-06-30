@@ -1,0 +1,55 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String?
+  content     String?
+  unit        String?
+  images      String[] // nhiều ảnh
+  isFeatured  Boolean  @default(false)
+  isPublished Boolean  @default(true)
+  category    Category? @relation(fields: [categoryId], references: [id])
+  categoryId  String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Category {
+  id        String    @id @default(cuid())
+  name      String
+  slug      String    @unique
+  products  Product[]
+  createdAt DateTime  @default(now())
+}
+
+model Post {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  excerpt     String?  // tóm tắt ngắn
+  content     String   // nội dung bài viết
+  coverImage  String?
+  isPublished Boolean  @default(true)
+  publishedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Contact {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String
+  email     String?
+  message   String?
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
