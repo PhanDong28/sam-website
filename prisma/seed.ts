@@ -14,7 +14,6 @@ async function main() {
       name: "Sâm Ngọc Linh 20 năm tuổi",
       slug: "sam-ngoc-linh-20-nam-tuoi",
       description: "Sâm Ngọc Linh chính gốc, 20 năm tuổi, chứng nhận xuất xứ",
-      price: 15000000,
       unit: "củ",
       isFeatured: true,
       categoryId: category.id,
