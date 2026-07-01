@@ -13,12 +13,12 @@ const GOLD = "#c9a84c";
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const product = await prisma.product.findUnique({ where: { slug, isPublished: true } });
-  if (!product) return { title: "Sản phẩm không tồn tại | Hữu Sâm" };
+  if (!product) return { title: "Sản phẩm không tồn tại | Hậu Sâm" };
 
-  const title = `${product.name} | Hữu Sâm`;
+  const title = `${product.name} | Hậu Sâm`;
   const description = product.description
     ? product.description.slice(0, 160)
-    : `${product.name} – sâm chính gốc Việt Nam, nguồn gốc rõ ràng. Liên hệ Hữu Sâm để được báo giá tốt nhất.`;
+    : `${product.name} – sâm chính gốc Việt Nam, nguồn gốc rõ ràng. Liên hệ Hậu Sâm để được báo giá tốt nhất.`;
   const image = product.images?.[0];
 
   return {

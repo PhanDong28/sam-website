@@ -84,12 +84,12 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <span style={S.eyebrow}>— QUẢN TRỊ —</span>
           <Image
             src="/logo.webp"
-            alt="Hữu Sâm"
+            alt="Hậu Sâm"
             width={64}
             height={64}
             style={{ borderRadius: "50%", objectFit: "cover", border: "1px solid rgba(201,168,76,0.4)" }}
           />
-          <div style={S.logoText as React.CSSProperties}>Hữu Sâm</div>
+          <div style={S.logoText as React.CSSProperties}>Hậu Sâm</div>
           <div style={S.subText as React.CSSProperties}>SỨC KHỎE LÀ VÀNG</div>
         </div>
 

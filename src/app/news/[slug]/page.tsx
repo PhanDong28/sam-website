@@ -17,9 +17,9 @@ function stripHtml(html: string) {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const post = await prisma.post.findUnique({ where: { slug, isPublished: true } });
-  if (!post) return { title: "Bài viết không tồn tại | Hữu Sâm" };
+  if (!post) return { title: "Bài viết không tồn tại | Hậu Sâm" };
 
-  const title = `${post.title} | Hữu Sâm`;
+  const title = `${post.title} | Hậu Sâm`;
   const description = post.excerpt || stripHtml(post.content).slice(0, 160);
 
   return {

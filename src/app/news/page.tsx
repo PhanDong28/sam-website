@@ -10,8 +10,8 @@ export const revalidate = 0;
 const GOLD = "#c9a84c";
 
 export const metadata: Metadata = {
-  title: "Tin Tức & Sự Kiện | Hữu Sâm",
-  description: "Kiến thức, tin tức và câu chuyện về sâm Việt Nam — được tuyển chọn và cập nhật thường xuyên từ Hữu Sâm.",
+  title: "Tin Tức & Sự Kiện | Hậu Sâm",
+  description: "Kiến thức, tin tức và câu chuyện về sâm Việt Nam — được tuyển chọn và cập nhật thường xuyên từ Hậu Sâm.",
 };
 
 function stripHtml(html: string) {

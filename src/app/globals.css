@@ -162,6 +162,34 @@ body {
   .home-hero-cta a { flex: 1 1 auto; text-align: center; padding-left: 24px !important; padding-right: 24px !important; }
 }
 
+/* ============ Homepage redesign additions ============ */
+.rotated-year {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  letter-spacing: 0.35em;
+  font-size: 10px;
+  color: var(--gold);
+  opacity: 0.45;
+  flex-shrink: 0;
+}
+
+.journey-grid { display: grid; grid-template-columns: 1fr 0.85fr; gap: 72px; align-items: center; }
+.journey-img-frame { position: relative; border: 1px solid rgba(201,168,76,0.25); padding: 10px; border-radius: 2px; }
+
+.carousel-arrow {
+  width: 38px; height: 38px; border-radius: 50%;
+  border: 1px solid rgba(201,168,76,0.4);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold); font-size: 16px; cursor: default;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.carousel-arrow:hover { background: var(--gold); color: #0a0e08; border-color: var(--gold); }
+
+@media (max-width: 960px) {
+  .journey-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
 .footer-grid { display: grid; grid-template-columns: 2.2fr 1fr 1fr 1.3fr; gap: 48px; }
 @media (max-width: 900px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }

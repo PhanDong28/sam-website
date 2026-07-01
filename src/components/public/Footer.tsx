@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div style={{ fontSize: 9, letterSpacing: "0.3em", color: GOLD, marginBottom: 10 }}>✦ PREMIUM GINSENG ✦</div>
-            <div style={{ fontSize: 22, fontWeight: 400, color: "#f0d070", fontFamily: "var(--font-serif), Georgia, serif", marginBottom: 14 }}>Sâm Việt Nam</div>
+            <div style={{ fontSize: 22, fontWeight: 400, color: "#f0d070", fontFamily: "var(--font-serif), Georgia, serif", marginBottom: 14 }}>Hậu Sâm</div>
             <p style={{ color: "#7a5a30", fontSize: 13, lineHeight: 1.8, maxWidth: 280, marginBottom: 24 }}>
               Chuyên cung cấp sâm Ngọc Linh, sâm Lai Châu và các sản phẩm sâm chính gốc Việt Nam chất lượng cao, có chứng nhận xuất xứ rõ ràng.
             </p>
@@ -56,7 +56,7 @@ export default function Footer() {
             <div style={{ fontSize: 10, letterSpacing: "0.2em", color: GOLD, marginBottom: 20 }}>LIÊN HỆ</div>
             {[
               { icon: "📞", val: "0919 198 522", sub: "Hotline 24/7" },
-              { icon: "✉", val: "info@samvietnam.vn", sub: "Email" },
+              { icon: "✉", val: "info@hausam.vn", sub: "Email" },
               { icon: "📍", val: "Đà Nẵng, Việt Nam", sub: "Văn phòng" },
               { icon: "🕐", val: "8:00 – 22:00", sub: "T2 – CN" },
             ].map(c => (

@@ -69,7 +69,7 @@ export default function ContactPage() {
             <div style={{ fontSize: 10, letterSpacing: "0.25em", color: GOLD, marginBottom: 24 }}>THÔNG TIN LIÊN HỆ</div>
             {[
               { icon: "📞", label: "Điện thoại", val: "0919 198 522" },
-              { icon: "✉", label: "Email", val: "info@samvietnam.vn" },
+              { icon: "✉", label: "Email", val: "info@hausam.vn" },
               { icon: "📍", label: "Địa chỉ", val: "Đà Nẵng, Việt Nam" },
               { icon: "🕐", label: "Giờ làm việc", val: "8:00 – 17:30, T2–T7" },
             ].map(c => (

@@ -17,11 +17,11 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Hữu Sâm – Sức Khỏe Là Vàng",
+  title: "Hậu Sâm – Sức Khỏe Là Vàng",
   description: "Chuyên cung cấp sâm Ngọc Linh, sâm Lai Châu chính gốc Việt Nam. Chứng nhận nguồn gốc rõ ràng, chất lượng đảm bảo.",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
+      { url: "/logo_Sam-removebg-preview-removebg-preview.webp" },
     ],
     apple: "/apple-touch-icon.png",
   },

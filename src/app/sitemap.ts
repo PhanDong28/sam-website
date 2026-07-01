@@ -1,7 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import type { MetadataRoute } from "next";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://huusam.vn";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://hausam.vn";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [products, posts] = await Promise.all([

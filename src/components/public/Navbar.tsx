@@ -37,8 +37,8 @@ export default function Navbar() {
       }}>
         <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 12 }}>
           <Image
-            src="/logo.webp"
-            alt="Hữu Sâm Logo"
+            src="/logo_Sam-removebg-preview-removebg-preview.webp"
+            alt="Hậu Sâm Logo"
             width={52}
             height={52}
             style={{ borderRadius: "50%", objectFit: "cover" }}
@@ -46,7 +46,7 @@ export default function Navbar() {
           />
           <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
             <span style={{ fontFamily: "var(--font-serif), Georgia, serif", fontSize: 20, color: "#f0d070", letterSpacing: "0.04em", lineHeight: 1 }}>
-              Hữu Sâm
+              Hậu Sâm
             </span>
             <span style={{ fontSize: 9, color: GOLD, letterSpacing: "0.25em" }}>✦ SỨC KHỎE LÀ VÀNG ✦</span>
           </div>

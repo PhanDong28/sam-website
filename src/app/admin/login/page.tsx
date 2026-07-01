@@ -39,7 +39,7 @@ export default function LoginPage() {
       <div className="fade-in-up" style={{ width: "100%", maxWidth: 400, position: "relative" }}>
         <div style={{ textAlign: "center", marginBottom: 40 }}>
           <div style={{ fontSize: 9, letterSpacing: "0.35em", color: "#c9a84c", marginBottom: 12 }}>✦ QUẢN TRỊ HỆ THỐNG ✦</div>
-          <h1 style={{ fontSize: 26, fontWeight: 400, color: "#f0d070", fontFamily: "var(--font-serif), Georgia, serif", margin: "0 0 12px" }}>Sâm Việt Nam</h1>
+          <h1 style={{ fontSize: 26, fontWeight: 400, color: "#f0d070", fontFamily: "var(--font-serif), Georgia, serif", margin: "0 0 12px" }}>Hậu Sâm</h1>
           <div style={{ width: 40, height: 1, background: "#c9a84c", margin: "0 auto" }} />
         </div>
         <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: 4, padding: "40px 36px" }}>
@@ -47,7 +47,7 @@ export default function LoginPage() {
           <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             <div>
               <label style={{ display: "block", fontSize: 10, letterSpacing: "0.2em", color: "#7a6040", marginBottom: 8 }}>EMAIL</label>
-              <input name="email" type="email" required placeholder="admin@samvietnam.vn" style={inputStyle} />
+              <input name="email" type="email" required placeholder="admin@hausam.vn" style={inputStyle} />
             </div>
             <div>
               <label style={{ display: "block", fontSize: 10, letterSpacing: "0.2em", color: "#7a6040", marginBottom: 8 }}>MẬT KHẨU</label>

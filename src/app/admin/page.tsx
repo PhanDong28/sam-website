@@ -63,7 +63,7 @@ export default async function AdminDashboard() {
       </div>
 
       <p className="fade-in" style={{ color: "#9e8860", fontSize: 13, letterSpacing: "0.05em", textAlign: "center" }}>
-        Chào mừng trở lại — Hữu Sâm Admin
+        Chào mừng trở lại — Hậu Sâm Admin
       </p>
     </div>
   );
